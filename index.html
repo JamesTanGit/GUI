@@ -1,0 +1,157 @@
+<!-- James Tan -->
+<!-- James_Tan@student.uml.edu -->
+<!-- UMass Lowell - COMP 4610 GUI Programming I -->
+<!-- September 14 2019 -->
+<!-- This website will serve as an organizer for my GUI programming assignments. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Character encoding of UTF-8 -->
+        <meta charset="utf-8">
+        <!-- Support for IE9 and IE8 is advised until depreciated completely. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Responsive Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>James' GUI Webpage</title>
+        <!-- Provides access to commonly used glyphicons. Bootstrap glyphicons depreciated. -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Provides access to the bootstrap CSS framework. Minified version is used for slight improvement in client-side optimization for rendering -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- My own custom CSS for this webpage only -->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <!-- This is the beginning of my navbar. This part will provide access to key links to other webpages within the website if needed. -->
+            <nav class="navbar navbar-default header-nav">
+                <!-- I want this part to stretch to the max width of the screen. -->
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!-- Semantic tag used for my name. -->
+                        <h1>
+                            <a href="index.html" class="pull-left">
+                                <strong class="black text-uppercase transform">James Tan</strong>
+                            </a>
+                        </h1>
+                        <!-- This is only accessible via mobile or a device width of XS-dimensions (max-width of 767px). -->
+                        <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div><!-- .navbar-header -->
+                    <!-- This is the dropdown list that will show up on XS devices. -->
+                    <div id="collapsable-nav" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li id="enlarge-btn">
+                                <!-- This clickable area will not reload the webpage -->
+                                <a href="javascript:void(0)">
+                                    <img class="resize-img" src="images/resize-img.png" alt="Resize Button">
+                                    <span class="hidden-lg hidden-md hidden-sm">Change Font Size</span>
+                                </a>
+                            </li>     
+                        </ul><!-- #nav-list -->
+                    </div><!-- .collapse .navbar-collapse -->
+                </div>
+            </nav>
+        </header>
+        <!-- This is the main content, AKA, the real body of my content -->
+        <div id="main-content">
+            <!-- Introductory area. I want this part to fill the width of the screen as well. -->
+            <div class="text-32 container-fluid">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-md-4 col-lg-3 col-sm-offset-0">
+                    <!-- Clicking on the image will take you to my "About" page. Currently, it is not implemented. A # will serve as a temporary placement. -->
+                    <a href="#">
+                        <!-- This image will be responsive. -->
+                        <img src="images/facial-img.png" alt="Picture of James" class="img-responsive">
+                    </a>
+                </div>
+                <!-- This is my text area utilizing the bootstrap grid system. -->
+                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 transform">
+                    Hi there, I'm <strong>James Tan</strong>. This website is used for COMP 4610 GUI Programming I.
+                </div>
+            </div>
+            <!-- I can set a margin-bottom here, but <br> tags work too. Although I'd probably never do this in the industry. -->
+            <br><br><br>
+            <!-- I'm just repeating code here. This will serve as a layout for each assignment. -->
+            <!-- This part will not fill the width of the screen, but will have margins to the left and right. -->
+            <div class="container assignments">
+                <div class="col-sm-8">
+                    <!-- Link to HW3 -->
+                    <a href="HW3_sourceCode/index.html">
+                        <img src="images/assignment-one.png" alt="Picture of Pacific Trails Resort" class="img-responsive">
+                    </a>
+                </div>
+                <!-- Description of HW3 -->
+                <div class="col-sm-4">
+                    <a href="HW3_sourceCode/index.html">
+                        <div class="transform">
+                            <strong>Assignment 1: Pacific Trails Resort</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    <!-- Link to HW4 -->
+                    <a href="HW4/about.html">
+                        <img src="images/HW4.png" alt="Picture of HW4" class="img-responsive">
+                    </a>
+                </div>
+                <!-- Description of HW4 -->
+                <div class="col-sm-4">
+                    <a href="HW4/about.html">
+                        <div class="transform">
+                            <strong>Assignment 2: Styling Your First Web Page With CSS</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    <img src="images/sample.jpg" alt="#" class="img-responsive">
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <div class="transform">
+                            <strong>Assignment 3: Unknown</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    <img src="images/sample.jpg" alt="#" class="img-responsive">
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <div class="transform">
+                            <strong>Assignment 4: Unknown</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    <img src="images/sample.jpg" alt="#" class="img-responsive">
+                </div>
+                <div class="col-sm-4">
+                    <a href="#">
+                        <div class="transform">
+                            <strong>Assignment 5: Unknown</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- #main-content -->
+        <footer class="panel-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+
+                    </div>
+                </div>
+                <div class="text-center">&copy; James Tan 2019
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

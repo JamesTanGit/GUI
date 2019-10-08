@@ -1,0 +1,107 @@
+/**GENERAL USE**/
+
+/**GENERAL FORMATTING**/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+	background-color: #00569F;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to bottom, #FFFFFF, #00569F);
+	background-repeat: no-repeat;
+}
+
+nav {
+	float: left;
+    width: 160px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+	font-size: 1.2em;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+header {
+	background-image: url("sunset.jpg");
+	background-color: #000033;
+	background-position: right;
+	background-repeat: no-repeat;
+	text-align: left;
+	height: 60px;
+	padding-top: 15px;
+}
+
+h1 {
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 75%;
+	font-style: italic;
+	text-align: left;
+    margin-left: 190px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+div img {
+	float: left;
+	margin-right: 33px;
+}
+
+/**This is gonna be messy because I usually section out my CSS, but everything under here will be the classes**/
+#wrapper {
+	width: 80%;
+    margin: 20px auto 0 auto;
+	background-color: #90C7E3; 
+	min-width: 600px;
+	margin-top: 20px;
+}
+
+#content {
+	padding: 1px 20px 20px 30px;
+    display: block;
+    background-color: #FFFFFF;
+    margin-left: 190px;
+}
+
+#content ul {
+	list-style-image: url(marker.gif);
+}
+
+#contact {
+	font-size: 90%;
+}
+
+.resort {
+	color: #5C7FA3;
+    font-weight: bold;
+}

@@ -1,0 +1,257 @@
+/** James Tan 
+    James_Tan@student.uml.edu -->
+    UMass Lowell - COMP 4610 GUI Programming I -->
+    October 5 2019 -->
+    This website will serve as an organizer for my GUI programming assignments.
+**/
+/** This will fix my issue with the phone number being highlighted **/
+.noHover {
+  pointer-events: none;
+}
+
+/** General formatting applied to the body **/
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #3cba54;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/** Everything related to the header is here **/
+#header-nav {
+  background-color: #4885ed;
+  border-radius: 0;
+  border: 0;
+}
+
+/** Fixed image size for large screens **/
+#logo-img {
+  background: url('../images/camp-logo_large.jpg') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+/** Styling the Camp Name **/
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Camp Name */
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #DCDCDC;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+ /** Minor styling to the CPR Certification under the name **/
+.navbar-brand p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: .8em;
+  margin-top: 15px;
+}
+
+/** This is everything to the right of the logo image and the camp name. **/
+/** This section will style part of the glyphicons being used. **/
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+/** This section will style and align the phone number next to the glyphicons. **/
+#phone {
+  margin-top: 5px;
+}
+
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #44B4E9;
+}
+
+/** Clearing the float so the icon-bar goes to the bottom. **/
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* This will style the main-content in our HTML file. */
+.category-tile {
+  position: relative;
+  border: 2px solid #000;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto 15px;
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #ff9000;
+}
+
+#about-title {
+  margin-bottom: 50px;
+}
+/* END MAIN-CONTENT */
+
+/* This section of CSS will style the footer. */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#hours p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+#testimonials {
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+/** Everything else below this section will add additional styling to the HTML page with responsiveness. **/
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/camp-logo_medium.jpg') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* About Page */
+  .explanation {
+    margin-bottom: 12px;
+  }
+  /* End About Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #44B4E9;
+    color: #000;
+  }
+
+
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* About Page */
+  .explanation {
+    margin-bottom: 12px;
+  }
+  /* End About Page */
+}

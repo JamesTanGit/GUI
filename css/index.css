@@ -1,0 +1,93 @@
+/**GENERAL PURPOSE**/
+.black {
+    color: #58595b;
+}
+
+.text-32 {
+    font-size: 32px;
+}
+
+/**GENERAL FORMATTING**/
+body {
+    font-size: 16px;
+    color: #58595b;
+    background-color: #ffffff;
+    font-family: "Arial";
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.transform {
+    transition: font-size 200ms ease-out;
+}
+
+.transform-active {
+    font-size: 1.5em !important;
+}
+
+/**HEADER**/
+.header-nav {
+    background-color: #ffff;
+    border-radius: 0;
+    border: 0;
+    margin-top: 10px;
+}
+
+.resize-img {
+    width: 45px;
+    height: 41px;
+}
+
+/**BODY**/
+.assignments div{
+    margin-bottom: 40px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+  
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    /**NAME**/
+    .navbar-header h1 {
+        margin-left: 17px;
+    }
+    
+    /**ENLARGE BUTTON**/
+    #enlarge-btn {
+        border-bottom: 1px solid #ddd;
+        font-size: 18px;
+    }
+
+    .navbar-default .navbar-collapse {
+        margin-top: 15px;
+    }
+
+    /**DROPDOWN BUTTON**/
+    .navbar-toggle {
+        margin-top: 1px;
+    }
+
+    /**DROPDOWN LIST**/
+    #nav-list li {
+        text-align: center;
+    }
+
+    #nav-list a:hover {
+        background: #E7E7E7;
+    }
+}

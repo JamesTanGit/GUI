@@ -1,0 +1,167 @@
+<!-- James Tan -->
+<!-- James_Tan@student.uml.edu -->
+<!-- UMass Lowell - COMP 4610 GUI Programming I -->
+<!-- October 5 2019 -->
+<!-- This website will serve as an organizer for my GUI programming assignments. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This is going to be a sample webpage for a camp near where I live. -->
+  <title>Blackstone Summer Camp</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/about.css">
+  <!-- Free select google font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- This is the navbar, so the top section that contains the majority of the hyperlinks -->
+    <!-- They temporarily have # to link to because those would be other pages, which I have not implemented yet -->
+    <nav id="header-nav" class="navbar navbar-default">
+
+      <div class="container">
+        <!-- This is going to be the section of content to the left of the header -->
+        <div class="navbar-header">
+          <a href="#" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="#"><h1>Blackstone Summer Camp</h1></a>
+            <p>
+              <span>*CPR Certified*</span>
+            </p>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- This is everything to the right of the header. -->
+        <!-- This will also be displayed if the dropdown icon is clicked on a small screen. -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs">
+              <a href="#">
+                <span class="glyphicon glyphicon-home"></span>Home</a>
+            </li>
+            <li id="navEnrollButton" class="">
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Enroll</a>
+            </li>
+            <li id="navAboutButton" class="active">
+              <a href="about.html">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+            </li>
+            <li id="navAwardsButton" class="">
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="#" class="noHover">
+                <span>617-635-5162</span>
+              </a>
+            </li>          
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="#">
+    <span class="glyphicon glyphicon-earphone"></span>
+    617-635-5162
+    </a>
+  </div>
+
+  <div id="main-content" class="container">
+    <h2 id="about-title" class="text-center">Blackstone Summer Camp</h2>
+    <div class="row">
+      <!-- Some example bogus that I wrote lol -->
+      <div class="col-md-4 explanation">
+        <div class="category-tile">
+          <!-- These images are from my collection of photos that I took while I was a counselor. -->
+          <img width="300" height="400" src="images/programs.jpg" alt="Programs">
+          <span>Programs</span>
+        </div>
+        Your child will have a memorable experience here at camp! We offer many different programs to enhance your child's summer experience, which include dancing, swimming, tennis, soccer, kickball, computer time, and much more!
+      </div>
+      <!-- Some more bogus that I wrote -->
+      <div class="col-md-4 explanation">
+        <div class="category-tile">
+          <img width="300" height="400" src="images/trips.jpg" alt="Trips">
+          <span>Trips</span>
+        </div>
+        Who doesn't like a fun field trip!? Over the length of their camp experience, they will venture outside of their comfort zone to visit many of Boston's highlights, which include the New England Aquarium, Franklin Park Zoo, Spectacle Island, and a lot more!
+      </div>
+      <!-- Even more bogus, it actually took me some time to think of these -->
+      <div class="col-md-4 explanation">
+        <div class="category-tile">
+          <img width="300" height="400" src="images/community.jpg" alt="Community">
+          <span>Community</span>
+        </div>
+        Welcome to the family! After signing up, you and your child will be welcome to join us in our community events, which include block parties, basketball games, playground activities, the fitness center, and so on. It's a great time to make some connections!
+      </div>
+    </div>
+  </div><!-- End of #main-content -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <!-- Super long workday ugh -->
+        <div id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+            Monday - Friday: 9:00AM - 5:00PM<br>
+            Saturday - Closed<br>
+            Sunday - Closed
+            <p>* $25 optional fee per week: Hours extended from 8:00 AM - 6:00PM</p>
+            <hr class="visible-xs">
+        </div>    
+        <!-- THIS IS A LEGIT ADDRESS! -->
+        <div id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            50 W Brookline Street<br>
+            Boston, MA 02118
+            <hr class="visible-xs">
+        </div>
+          <!-- Fake quotes, lmao, only here for this assignment -->
+          <div id="testimonials" class="col-sm-4">
+            <p>"My son keeps asking me to come back year after year!"</p>
+            <p>"Amazing counselors! Great camp! My daughter looks forward to this year after year!"</p>
+          </div>    
+        </div>
+        <div class="row">
+          <div class="col-xs-6 text-right">
+              <p>
+                  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                      <img style="border:0;width:88px;height:31px"
+                          src="http://jigsaw.w3.org/css-validator/images/vcss"
+                          alt="Valid CSS!" />
+                  </a>
+              </p>
+          </div>
+          <div class="col-xs-6 text-left">
+            <p>
+              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+              </a>
+            </p>
+          </div>
+        </div>
+      <div class="text-center">&copy; Copyright James Tan 2019</div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on them) -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
