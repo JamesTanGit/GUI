@@ -24,36 +24,36 @@ function myFunction() {
     /*We will execute innerHTML on this variable later to set and refresh the content of the table*/
     var table = document.getElementById('table');
     /*The numbers must be a number and it must be greater than or equal to zero*/
-    if (isNaN(parseInt(hb1)) || hb1 < 0) {
-        document.getElementById('error1').innerHTML = 'Invalid input. Please enter in a positive number.'
+    if (isNaN(parseInt(hb1)) || hb1 < -50 || hb1 > 50) {
+        document.getElementById('error1').innerHTML = 'Invalid input. Please enter a number between -50 and 50.'
         flag1 = 0;
     }
     else {
-        document.getElementById('error1').innerHTML = ''
+        document.getElementById('error1').innerHTML = '';
         flag1 = 1;
     }
-    if (isNaN(parseInt(hb2)) || hb2 < 0) {
-        document.getElementById('error2').innerHTML = 'Invalid input. Please enter in a positive number.'
+    if (isNaN(parseInt(hb2)) || hb2 < -50 || hb2 > 50) {
+        document.getElementById('error2').innerHTML = 'Invalid input. Please enter a number between -50 and 50.'
         flag2 = 0;
     }
     else {
-        document.getElementById('error2').innerHTML = ''
+        document.getElementById('error2').innerHTML = '';
         flag2 = 1;
     }
-    if (isNaN(parseInt(vb1)) || vb1 < 0) {
-        document.getElementById('error3').innerHTML = 'Invalid input. Please enter in a positive number.'
+    if (isNaN(parseInt(vb1)) || vb1 < -50 || vb1 > 50) {
+        document.getElementById('error3').innerHTML = 'Invalid input. Please enter a number between -50 and 50.'
         flag3 = 0;
     }
     else {
-        document.getElementById('error3').innerHTML = ''
+        document.getElementById('error3').innerHTML = '';
         flag3 = 1;
     }
-    if (isNaN(parseInt(vb2)) || vb2 < 0) {
-        document.getElementById('error4').innerHTML = 'Invalid input. Please enter in a positive number.'
+    if (isNaN(parseInt(vb2)) || vb2 < -50 || vb2 > 50) {
+        document.getElementById('error4').innerHTML = 'Invalid input. Please enter a number between -50 and 50.'
         flag4 = 0;
     }
     else {
-        document.getElementById('error4').innerHTML = ''
+        document.getElementById('error4').innerHTML = '';
         flag4 = 1;
     }
     if (flag1 == 1 && flag2 == 1 && flag3 == 1 && flag4 == 1) {
