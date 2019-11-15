@@ -40,6 +40,10 @@ a:hover, a:focus {
     height: 41px;
 }
 
+.fa-language {
+    font-size: 35px;
+}
+
 /**BODY**/
 .assignments div{
     margin-bottom: 40px;
@@ -69,6 +73,12 @@ a:hover, a:focus {
     
     /**ENLARGE BUTTON**/
     #enlarge-btn {
+        border-bottom: 1px solid #ddd;
+        font-size: 18px;
+    }
+
+    /**ENLARGE BUTTON**/
+    #translate-btn {
         border-bottom: 1px solid #ddd;
         font-size: 18px;
     }
