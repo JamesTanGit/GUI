@@ -1,0 +1,48 @@
+/*  
+    James Tan
+    James_Tan@student.uml.edu
+    UMass Lowell - COMP 4610 GUI Programming I
+    November 24 2019
+*/
+/*Sources: W3Schools*/
+
+/*This function will be executed on click of the submit button*/
+function myFunction() {
+    /*These represent the horizontal and vertical boundary data from the form*/
+    var hb1 = Math.floor(document.getElementById('horizontalboundary1').value);
+    var hb2 = Math.floor(document.getElementById('horizontalboundary2').value);
+    var vb1 = Math.floor(document.getElementById('verticalboundary1').value);
+    var vb2 = Math.floor(document.getElementById('verticalboundary2').value);
+    /*This is the range between the numbers of each boundary that will be used for determining the table size*/
+    var hrange = Math.abs(hb1 - hb2);
+    var vrange = Math.abs(vb1 - vb2);
+    /*This will find the min and max of each boundary*/
+    var hmin = Math.min(hb1, hb2);
+    var hmax = Math.max(hb1, hb2);
+    var vmin = Math.min(vb1, vb2);
+    var vmax = Math.max(vb1, vb2);
+    /*Flags to check that the input is all valid, initially set to invalid*/
+    var flag1 = 0, flag2 = 0, flag3 = 0, flag4 = 0;
+    /*We will execute innerHTML on this variable later to set and refresh the content of the table*/
+    var table = document.getElementById('table');
+    // Creates the first row, leaving a blank cell at the beginning
+    var content = '<tr><th></th>';
+    // Creates the entire first row, which is the range of the horizontal boundary
+    for (var i = 0; i <= hrange; i++ ) {
+        content += '<th>' + (hmin + i) + '</th>';
+    }
+    content += '</tr>';
+    // Creates the rest of the rows
+    for (var i = 0; i <= vrange; i++) {
+        // Creates the first cell in the vertical range
+        content += '<tr>';
+        content += '<th>' + (vmin + i) + '</th>';
+        // Creates the data cells in the multiplication table
+        for (var j = 0; j <= hrange; j++) {
+            content += '<td>' + (vmin + i) * (hmin + j) + '</td>';
+        }
+        content += '</tr>';
+    }
+    // Set the content of the table
+    document.getElementById('table').innerHTML = content;
+}

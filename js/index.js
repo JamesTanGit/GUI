@@ -28,6 +28,10 @@ var dictionary = {
   	english: "In Class Assignment 6: Some More JavaScript",
   	spanish: "Tarea 6 en clase: más JavaScript"
   },
+  "Assignment 7: Using the jQuery Validation Plugin with Your Dynamic Table": {
+    english: "Assignment 7: Using the jQuery Validation Plugin with Your Dynamic Table",
+    spanish: "Tarea 7: Uso del complemento jQuery Validation con su tabla dinámica"
+  },
   "Unknown": {
     english: "Unknown",
     spanish: "Desconocido"

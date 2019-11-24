@@ -1,0 +1,64 @@
+<!-- James Tan -->
+<!-- James_Tan@student.uml.edu -->
+<!-- UMass Lowell - COMP 4610 GUI Programming I -->
+<!-- November 24 2019 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 7</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- This groups the input fields together, which is what the user initially sees -->
+    <div class="container main-content">
+        <!-- This is going to be a form that will handle the form data via a function called myFunction on submission of the form -->
+        <form id="submit-form" onsubmit="return false;">
+            <div class="form-group">
+                <div class="input-bar">
+                    <label for="HorizontalBoundary">Enter horizontal axis bounding numbers between -50 and 50.</label>
+                    <!-- First Horizontal Boundary Number -->
+                    <input type="number" name="horizontalboundary1" class="form-control" id="horizontalboundary1" placeholder="Enter number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-bar">
+                    <!-- Second Horizontal Boundary Number -->
+                    <input type="number" name="horizontalboundary2" class="form-control" id="horizontalboundary2" placeholder="Enter number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-bar">
+                    <label for="VerticalBoundary">Enter vertical axis bounding numbers between -50 and 50.</label>
+                    <!-- First Vertical Boundary Number -->
+                    <input type="number" name="verticalboundary1" class="form-control" id="verticalboundary1" placeholder="Enter number">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-bar">
+                    <!-- Second Vertical Boundary Number -->
+                    <input type="number" name="verticalboundary2" class="form-control" id="verticalboundary2" placeholder="Enter number">
+                </div>
+            </div>
+            <div class="submit-button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container-fluid results">
+        <table id="table" class="text-center"></table>
+    </div>
+    <!-- jQuery (Bootstrap JS plugins depend on them) -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- jQuery validation frameworks -->
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/additional-methods.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- jQuery for this page using the jQuery validation framework -->
+    <script src="js/validation.js"></script>
+</body>
+</html>
