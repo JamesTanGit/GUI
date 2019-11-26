@@ -1,0 +1,118 @@
+/*  
+    James Tan
+    James_Tan@student.uml.edu
+    UMass Lowell - COMP 4610 GUI Programming I
+    November 25 2019
+*/
+
+/*Styling for the grouping of the input fields*/
+.main-content {
+    margin-top: 20px;
+}
+
+/*Styling for the input fields*/
+.input-bar {
+    display: block;
+}
+
+#input {
+    width: 120px;
+}
+
+/*Some margins on the top to separate the input fields from the table*/
+.customTable {
+    margin: 20px auto 20px auto;
+}
+
+/*Styling of the cells in the table*/
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #C79AE9;
+}
+
+/*Checkers the table cells*/
+tr:nth-child(even) td:nth-child(odd), 
+tr:nth-child(odd) td:nth-child(even)
+{
+    background-color: #C1E7FF;
+}
+
+/*Styling of the submit button*/
+.submit-button button {
+    width: 100%;
+}
+
+/**Slider positioning**/
+.slider1 {
+    margin-top: 36px;
+}
+
+.slider2 {
+    margin-top: 11px;
+}
+
+.slider3 {
+    margin-top: 36px;
+}
+
+.slider4 {
+    margin-top: 11px;
+}
+
+/**Center tab content**/
+.ui-tabs-anchor div {
+    text-align: center;
+}
+
+/**Coloring**/
+.ui-widget-header {
+    background-color: #ffe357;
+}
+
+#tabs ul {
+    background-color: #7fccff;
+}
+
+button {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/**Slider positioning for responsive design**/
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .slider1 {
+        margin-top: 56px;
+    }
+
+    .slider3 {
+        margin-top: 56px;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider1 {
+        margin-top: 56px;
+    }
+
+    .slider3 {
+        margin-top: 56px;
+    }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .slider1 {
+        margin-top: 56px;
+    }
+
+    .slider3 {
+        margin-top: 56px;
+    }
+}

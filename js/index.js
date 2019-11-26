@@ -32,9 +32,9 @@ var dictionary = {
     english: "Assignment 7: Using the jQuery Validation Plugin with Your Dynamic Table",
     spanish: "Tarea 7: Uso del complemento jQuery Validation con su tabla dinámica"
   },
-  "Unknown": {
-    english: "Unknown",
-    spanish: "Desconocido"
+  "Assignment 8: Using the jQuery UI Slider and Tab Widgets": {
+    english: "Assignment 8: Using the jQuery UI Slider and Tab Widgets",
+    spanish: "Tarea 8: Uso del control deslizante jQuery UI y los widgets de pestaña"
   }
 };
 var translator = $("body").translate({lang: "english", t: dictionary});
