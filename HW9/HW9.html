@@ -1,0 +1,107 @@
+<!-- James Tan -->
+<!-- James_Tan@student.uml.edu -->
+<!-- UMass Lowell - COMP 4610 GUI Programming I -->
+<!-- December 11 2019 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 9</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container-fluid main_content">
+        <div class="text-center board col-sm-4 col-sm-offset-4">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div>Total Score:
+                    <span id="total_score">0</span>
+                </div>
+                <div>Word:
+                    <span id="word"></span>
+                </div>
+                <div>Score:
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center col-sm-12">
+            <table id="scrabble_board">
+                <!-- First Row -->
+                <tbody>
+                    <tr>
+                        <td class="ui-droppable" id="drop0">
+                        </td>
+
+                        <td class="double_word ui-droppable" id="drop1">
+                        </td>
+
+                        <td class="ui-droppable" id="drop2">
+                        </td>
+
+                        <td class="triple_letter ui-droppable" id="drop3">
+                        </td>
+
+                        <td class="ui-droppable" id="drop4">
+                        </td>
+
+                        <td class="double_letter ui-droppable" id="drop5">
+                        </td>
+
+                        <td class="ui-droppable" id="drop6">
+                        </td>
+
+                        <td class="star ui-droppable" id="drop7">
+                        </td>
+
+                        <td class="ui-droppable" id="drop8">
+                        </td>
+
+                        <td class="double_letter ui-droppable" id="drop9">
+                        </td>
+
+                        <td class="ui-droppable" id="drop10">
+                        </td>
+
+                        <td class="triple_letter ui-droppable" id="drop11">
+                        </td>
+
+                        <td class="ui-droppable" id="drop12">
+                        </td>
+
+                        <td class="triple_word ui-droppable" id="drop13">
+                        </td>
+
+                        <td class="ui-droppable" id="drop14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-12 text-center tile_rack_div">
+            <img id="tile_rack" src="images/tile_rack.png" alt="Scrabble Tile Rack">
+            <div id="rack">
+            </div>
+        </div>
+        <div class="col-sm-12 text-center ">
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap JS plugins depend on them) -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- jQuery validation frameworks -->
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/additional-methods.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/droppable.js"></script>
+    <!-- jQuery for this page using the jQuery validation framework -->
+</body>
+</html>

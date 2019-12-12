@@ -1,0 +1,83 @@
+/*  
+    James Tan
+    James_Tan@student.uml.edu
+    UMass Lowell - COMP 4610 GUI Programming I
+    December 11 2019
+*/
+
+body {
+    background-image: url('../images/Sminem.jpg');
+    background-repeat: repeat;
+    background-size: 200px 150px;
+}
+
+.main_content {
+    margin-top: 15%;
+}
+
+.board {
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 25px;
+    background-color: #D2B48C;
+}
+
+table {
+    border: 4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+  
+td {
+    background: #D2B48C;
+    border: solid 2px white;
+    height: 50px;
+    width: 50px;
+    z-index: 3;
+}
+
+.star {
+    background: url("../images/Star.png");
+    background-repeat: no-repeat;
+    background-size: 48px 47px;
+}
+
+.double_letter {
+    background: url("../images/Double_Letter_Score.png");
+    background-repeat: no-repeat;
+    background-size: 48px 47px;
+}
+
+.triple_letter {
+    background: url("../images/Triple_Letter_Score.png");
+    background-repeat: no-repeat;
+    background-size: 48px 47px;
+}
+
+.double_word {
+    background: url("../images/Double_Word_Score.png");
+    background-repeat: no-repeat;
+    background-size: 48px 47px;
+}
+
+.triple_word {
+    background: url("../images/Triple_Word_Score.png");
+    background-repeat: no-repeat;
+    background-size: 48px 47px;
+}
+
+.tile_rack_div {
+    margin: 30px 0;
+}
+
+#tile_rack {
+    height: 115px;
+    width: 400px;
+}
+
+.pieces {
+    height: 40px;
+    width: 40px;
+    z-index: 999;
+}
