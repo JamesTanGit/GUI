@@ -1,7 +1,7 @@
 <!-- James Tan -->
 <!-- James_Tan@student.uml.edu -->
 <!-- UMass Lowell - COMP 4610 GUI Programming I -->
-<!-- December 11 2019 -->
+<!-- December 13 2019 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +18,18 @@
 </head>
 <body>
     <div class="container-fluid main_content">
+        <!-- Information about the game to be displayed here to the user -->
         <div class="text-center board col-sm-4 col-sm-offset-4">
             <div class="col-sm-4 col-sm-offset-4">
                 <div>Total Score:
+                    <!-- Overall score -->
                     <span id="total_score">0</span>
                 </div>
+                <!-- Word that being created -->
                 <div>Word:
                     <span id="word"></span>
                 </div>
+                <!-- Current score of the word being created -->
                 <div>Score:
                     <span id="score">0</span>
                 </div>
@@ -33,7 +37,7 @@
         </div>
         <div class="text-center col-sm-12">
             <table id="scrabble_board">
-                <!-- First Row -->
+                <!-- One row of scrabble -->
                 <tbody>
                     <tr>
                         <td class="ui-droppable" id="drop0">
@@ -84,11 +88,13 @@
                 </tbody>
             </table>
         </div>
+        <!-- The tile rack which will provide the user with seven tiles -->
         <div class="col-sm-12 text-center tile_rack_div">
             <img id="tile_rack" src="images/tile_rack.png" alt="Scrabble Tile Rack">
             <div id="rack">
             </div>
         </div>
+        <!-- Submit button to submit the word on the Scrabble board -->
         <div class="col-sm-12 text-center ">
             <button id="submit" class="btn btn-primary">Submit</button>
         </div>
@@ -102,6 +108,5 @@
     <script src="../js/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/droppable.js"></script>
-    <!-- jQuery for this page using the jQuery validation framework -->
 </body>
 </html>

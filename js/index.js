@@ -35,6 +35,10 @@ var dictionary = {
   "Assignment 8: Using the jQuery UI Slider and Tab Widgets": {
     english: "Assignment 8: Using the jQuery UI Slider and Tab Widgets",
     spanish: "Tarea 8: Uso del control deslizante jQuery UI y los widgets de pestaña"
+  },
+  "Assignment 9: Implementing a Bit of Scrabble with Drag-and-Drop": {
+    english: "Assignment 9: Implementing a Bit of Scrabble with Drag-and-Drop",
+    spanish: "Tarea 9: Implementación de un poco de Scrabble con arrastrar y soltar"
   }
 };
 var translator = $("body").translate({lang: "english", t: dictionary});

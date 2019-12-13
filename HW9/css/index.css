@@ -2,9 +2,10 @@
     James Tan
     James_Tan@student.uml.edu
     UMass Lowell - COMP 4610 GUI Programming I
-    December 11 2019
+    December 13 2019
 */
 
+/*Background of the legendary boy Sminem*/
 body {
     background-image: url('../images/Sminem.jpg');
     background-repeat: repeat;
@@ -15,6 +16,7 @@ body {
     margin-top: 15%;
 }
 
+/*Scrabble board*/
 .board {
     color: #000000;
     font-size: 25px;
@@ -67,6 +69,7 @@ td {
     background-size: 48px 47px;
 }
 
+/*Tile rack*/
 .tile_rack_div {
     margin: 30px 0;
 }

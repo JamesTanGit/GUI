@@ -1,0 +1,24 @@
+James Tan
+James_Tan@student.uml.edu
+UMass Lowell - COMP 4610 GUI Programming I
+December 13 2019
+
+Currently, a lot of the features work for a basic Scrabble game
+that has only one row. There are quite a few bugs relating to
+issues not on the grading criteria, such as a tile being reloaded
+if dragged on the board and dragged back on the tile rack. There
+is also an unimplemented feature of the game where the user can
+drag the tile pieces from the rack onto any place on the board.
+For now, the letters do not have to be consecutive on the board
+in order to form a word. I did not implement any validation nor
+did I link it to a dictionary.
+
+You can play a very basic simple Scrabble game where you can
+drag letters to the tile board, click submit, and points will
+be awarded to the user and new tiles will appear on the tile
+rack. It's important to note that the star has no multiplier
+attached to it and there are places on the Scrabble board where
+the piece or pieces can earn double letter, double word, triple
+letter, or triple word points. I had to take some time to
+photoshop the pieces so that it blends in with the background color
+of the Scrabble board.
